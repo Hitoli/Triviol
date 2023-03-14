@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#d8e7f4"
+    tools:context=".registerwithus">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/logincard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="36dp"
+        android:layout_marginRight="25dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#fff"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/MenuCardLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="290dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="quizimage"
+                android:src="@drawable/man"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/spectral_medium"
+                android:gravity="center"
+                android:text="Welcome"
+                android:textColor="#36454F"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:text="Please Create Your Name &amp; Password"
+                android:textColor="#36454F"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/MyTextInputLayout_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/EnterName"
+                    android:fontFamily="@font/inter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:background="#7436454F"
+                    android:hint="@string/name"
+                    android:textColor="@color/whitesmoke"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    >
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/MyTextInputLayout_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/EnterEmail"
+                    android:fontFamily="@font/inter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:background="#7436454F"
+                    android:hint="Email"
+                    android:textColor="@color/whitesmoke"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    >
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:theme="@style/MyTextInputLayout_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/EnterPassword"
+                    android:fontFamily="@font/inter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:background="#7436454F"
+                    android:hint="Password"
+                    android:textColor="@color/whitesmoke"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:textSize="16dp"
+                    >
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/ButtonRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#F8C3D3"
+                android:fontFamily="@font/inter"
+                android:padding="10dp"
+                android:text="Register"
+                android:textColor="@color/black"
+                android:textSize="15sp">
+
+            </Button>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

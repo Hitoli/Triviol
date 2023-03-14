@@ -1,0 +1,34 @@
+private fun OnNameButtonPress() {
+        if (NameField.isEmpty() ||password.isEmpty()){
+            Toast.makeText(this, "Name or Password is Empty", Toast.LENGTH_SHORT).show()
+        }else{
+            user.signInWithEmailAndPassword(NameField,password).addOnSuccessListener {
+
+                val nameofpersonlogin = NameField;
+                val UserLocationLogin = password;
+                //  val nameitis = hashMapOf(
+                //     "username" to nameofpersonlogin,
+                //     "ID" to userID,
+                //    "locationofUserLogin" to UserLocationLogin
+                // )
+                //val storee = fstore.collection("Identity").document(userID!!).set(nameitis)
+                //Log.e("STOREE",storee.toString());
+                //  fstore.collection("Identity").add(nameitis).addOnSuccessListener {
+                //    Toast.makeText(this, "SUCCESS", Toast.LENGTH_SHORT).show()
+                // }.addOnFailureListener{
+                //  Toast.makeText(this, "FAILED", Toast.LENGTH_SHORT).show()
+                //}
+
+                Toast.makeText(this, "LOGIN SUCCESS", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this,start_game_screen::class.java);
+                intent.putExtra(ob.USER_NAME,NameField.toString())
+                startActivity(intent);
+                finish();
+            }.addOnFailureListener {
+                Toast.makeText(this, "LOGIN FAILED", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please Check Your Email or Password", Toast.LENGTH_SHORT).show()
+            }
+
+
+        }
+    }

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d8e7f4"
+    tools:context=".resultyoutubequiz">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/showresult"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="36dp"
+        android:elevation="5dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/congo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Congratulations!!"
+                android:textColor="@color/black"
+                android:textSize="27sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imagery"
+                android:layout_width="114dp"
+                android:layout_height="128dp"
+                android:layout_margin="2dp"
+                android:contentDescription="quizimage"
+                android:src="@drawable/win">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/usernam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hitesh"
+                android:fontFamily="@font/space_grotesk"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:id="@+id/scoring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Your score is 5/10"
+                android:fontFamily="@font/inter_bold"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center">
+            </TextView>
+            <Button
+                android:id="@+id/btnfinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="10dp"
+                android:fontFamily="@font/inter"
+                android:backgroundTint="#F8C3D3"
+                android:text="Lets Play Again"
+                android:textColor="#19388A"
+                android:textSize="15sp"
+                android:layout_margin="16dp">
+            </Button>
+
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

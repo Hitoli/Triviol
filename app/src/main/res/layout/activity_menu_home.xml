@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background_cricket_quiz"
+    tools:context=".menu_home">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menu_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="42dp"
+        android:elevation="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/whitesmoke"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/quiz_view">
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F8C3D3"
+
+        >
+        <ImageView
+            android:id="@+id/profilepic_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:contentDescription="icon for nav bar"
+            android:src="@drawable/man"
+            >
+
+        </ImageView>
+        <TextView
+            android:id="@+id/name_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#19388A"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:text="Hi,Hitesh">
+
+        </TextView>
+        <TextView
+            android:id="@+id/timerforquestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#19388A"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:layout_margin="4dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:text="₹500">
+        </TextView>
+        <ImageView
+            android:id="@+id/notification_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:contentDescription="Notification icon for home screen"
+            android:src="@drawable/baseline_notifications_24"
+            >
+
+        </ImageView>
+
+
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:id="@+id/quiz_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/menu_cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/quiz_1_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="2dp"
+        android:layout_margin="10dp"
+        android:background="@color/whitesmoke"
+        >
+        <LinearLayout
+            android:id="@+id/Quiz_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/whitesmoke"
+
+            >
+        <ImageView
+            android:id="@+id/imager_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="quizimage"
+            android:src="@drawable/quiz_1"
+            >
+        </ImageView>
+            <TextView
+                android:id="@+id/Quiz_1_intro"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#19388A"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:text="Quiz of Batters">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Quiz_1_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#19388A"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:text="Easy">
+
+            </TextView>
+            <TextView
+                android:id="@+id/Quiz_1_no_of_questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#19388A"
+                android:fontFamily="@font/inter_bold"
+                android:textSize="16dp"
+                android:padding="8dp"
+                android:layout_margin="4dp"
+                android:gravity="right"
+                android:layout_gravity="center_vertical"
+                android:text="10 Ques">
+
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Quiz_2_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:elevation="2dp"
+                android:layout_margin="10dp"
+                android:background="@color/whitesmoke"
+                >
+                <LinearLayout
+                    android:id="@+id/Quiz_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/whitesmoke"
+
+                    >
+                    <ImageView
+                        android:id="@+id/imager_2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="quizimage"
+                        android:src="@drawable/quiz_2"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/Quiz_2_intro"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:text="Quiz of Bowlers">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Quiz_2_difficulty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="Easy">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/Quiz_2_no_of_questions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="10 Ques">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Quiz_3_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:elevation="2dp"
+                android:layout_margin="10dp"
+                android:background="@color/whitesmoke"
+                >
+                <LinearLayout
+                    android:id="@+id/Quiz_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/whitesmoke"
+
+                    >
+                    <ImageView
+                        android:id="@+id/imager_3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="quizimage"
+                        android:src="@drawable/quiz_3"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/Quiz_3_intro"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:text="History of Cricket">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Quiz_3_difficulty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="Hard">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/Quiz_3_no_of_questions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="10 Ques">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Quiz_4_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:elevation="2dp"
+                android:layout_margin="10dp"
+                android:background="@color/whitesmoke"
+                >
+                <LinearLayout
+                    android:id="@+id/Quiz_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/whitesmoke"
+
+                    >
+                    <ImageView
+                        android:id="@+id/imager_4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="quizimage"
+                        android:src="@drawable/quiz_4"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/Quiz_4_intro"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:text="History of Indian Cricket">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Quiz_4_difficulty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="Hard">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/Quiz_4_no_of_questions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="10 Ques">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Quiz_5_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:elevation="2dp"
+                android:layout_margin="10dp"
+                android:background="@color/whitesmoke"
+                >
+                <LinearLayout
+                    android:id="@+id/Quiz_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/whitesmoke"
+
+                    >
+                    <ImageView
+                        android:id="@+id/imager_5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="quizimage"
+                        android:src="@drawable/quiz_5"
+                        >
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/Quiz_5_intro"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:text="Quiz of Cricketers">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Quiz_5_difficulty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="Medium">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/Quiz_5_no_of_questions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#19388A"
+                        android:fontFamily="@font/inter_bold"
+                        android:textSize="16dp"
+                        android:padding="8dp"
+                        android:layout_margin="4dp"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:text="10 Ques">
+
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8C3D3"
+    tools:context=".start_game_screen">
+    <TextView
+        android:id="@+id/hiname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:text="Hi,Hitesh"
+        android:textColor="#36454F"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+      >
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/graphicsdesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="42dp"
+        android:elevation="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/whitesmoke"
+        app:layout_constraintBottom_toTopOf="@id/introqouate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hiname">
+        <ImageView
+            android:id="@+id/imager"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:contentDescription="quizimage"
+            android:src="@drawable/homescreen_quizapp"
+            >
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/introqouate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/space_grotesk"
+            android:gravity="center"
+            android:layout_margin="32dp"
+            android:padding="20dp"
+            android:text="Answer these questions in the given time and win a lot of prices"
+            android:textColor="#36454F"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/graphicsdesign"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/buttonstart_game">
+
+        </TextView>
+    <Button
+        android:id="@+id/buttonstart_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#19388A"
+        android:fontFamily="@font/inter"
+        android:padding="10dp"
+        android:layout_margin="16dp"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/introqouate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
