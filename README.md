@@ -26,6 +26,13 @@ ScreenShots:
   
  </table>
 
+ Video:
+
+
+https://github.com/Hitoli/Triviol/assets/97933783/f413e5a3-a4a8-46af-98af-331cfd0e6d2f
+
+
+
 
 
 
